@@ -1,0 +1,55 @@
+.app{
+    display: grid;
+    width: 500px;
+    margin: 0 auto;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100px repeat(5, 50px);
+    grid-template-areas: 
+    "res res res res"
+    "7 8 9 reset"
+    "4 5 6 reset"
+    "1 2 3 reset"
+    "à dot plus minus"
+    "equal equal times div"
+    ;
+    border: 2px solid black;
+    margin-top: 8rem;
+}
+
+h3{
+    text-align: center;
+    padding: 20px;
+    margin: 0px;
+    font-size: 2rem;
+    grid-area: res;
+    border: 1px solid brown;
+    background-color: aliceblue;
+}
+
+button{
+   background-color: black;
+   color: aliceblue;
+   border: 1px solid white;
+   cursor: pointer;
+   transition: 0.2s;
+}
+
+button:hover{
+    background-color: lightgrey;
+    color: black;
+}
+
+#equal {
+    grid-area: equal;
+}
+
+#clear {
+    grid-area: reset;
+}
+
+body{
+    background-image: url(calculette.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
