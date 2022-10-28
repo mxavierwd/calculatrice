@@ -48,8 +48,17 @@ button:hover{
 }
 
 body{
-    background-image: url(calculette.jpg);
-    background-repeat: no-repeat;
+    background: black url(calculette.jpg);
+    /* background-image: url(calculette.jpg); */
+    background-repeat: repeat;
     background-position: center;
     background-size: cover;
+}
+
+@media (max-width:768px){
+
+    .app{
+        width: 250px;
+    }
+
 }
